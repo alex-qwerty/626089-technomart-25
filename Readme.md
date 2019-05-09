@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алексей Карачаров](https://up.htmlacademy.ru/htmlcss/25/user/626089).
-* Наставник: [Дмитрий Батманов] (https://htmlacademy.ru/profile/id10964)
+* Наставник: [Дмитрий Батманов] (https://htmlacademy.ru/profile/id10964).
 
 ---
 
