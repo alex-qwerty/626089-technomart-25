@@ -7,26 +7,27 @@
   <body>
     <header>
 
-      <nav class="top-navigation">
+      <div class="top-navigation">
         <a href="index.html">Техномарт</a>
-        <img src="img/icon-search.png" alt="Search">
-        <input type="text" placeholder="Поиск:">
-        <img src="img/icon-bookmark.png" alt="bookmark">
+        <a href="search.html">Поиск</a>
         <a href="bookmarks.html">Закладки</a>
-        <img src="img/cart-icon.png" alt="cart">
         <a href="cart.html">Корзина</a>
         <a href="checkout.html">Оформить заказ</a>
-      </nav>
+      </div>
 
       <section class="header-info">
-        <p class="description">Интернет-магазин строительных материалов
-          и инструментов для ремонта</p>
-        <div class="contacts-header">
-          <p class="pnone-header">+7 (812) 555-05-55</p>
+        <h1 class="description">
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </h1>
+        <address class="contacts-header">
+          <a href="tel: +7912550555" class="pnone-header">+7 (812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        <a href="login.html">Войти</a>
-        <a href="register.html">Регистрация</a>
+        </adress>
+
+        <ul class="user-block">
+          <li><a href="login.html">Войти</a></li>
+          <li><a href="register.html">Регистрация</a></li>
+        </ul>
       </section>
 
       <nav class="main-navigation">
@@ -46,11 +47,15 @@
 
       <section class="about-company">
         <h2>Компания Техномарт</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
+        <p>
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
           для ремонта и строительства не оставит равнодушными любителей
-          сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:</p>
+          сэкономить на гастарбайтерах.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:
+        </p>
 
         <ul class="delivery-list">
           <li>Деловые линии</li>
@@ -62,16 +67,17 @@
       </section>
 
       <section class="main-contacts">
+        <h2 class="hidden">Схема проезда</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <div class="main-map">
-          <a href="maps.html"></a>
+          <a href="maps.html">Карта</a>
         </div>
         <a href="contcts.html" class="button">Заблудились? Напишите нам!</a>
       </section>
     </main>
 
     <footer>
-      <nav class="footer-navigation">
+      <div class="footer-navigation">
         <a href="index.html">Техномарт</a>
 
         <ul class="navigation-links">
@@ -81,13 +87,13 @@
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-      </nav>
+      </div>
 
       <section class="footer-second-nav">
-        <p>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          +7 (812) 555-05-55
-        </p>
+        <address class="footer-adress">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<p>
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </address>
 
         <ul class="footer-navigation-links">
           <li><a href="materials.html">Материалы</a></li>
@@ -95,7 +101,6 @@
           <li><a href="tools.html">Инструменты</a></li>
           <li><a href="specials.html">Спецпредложения</a></li>
         </ul>
-
       </section>
 
       <section class="footer-end-row">
@@ -106,9 +111,9 @@
 
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="https://vk.com"></a>В контакте</li>
-            <li><a class="social-button" href="https://facebook.com"></a>facebook</li>
-            <li><a class="social-button" href="https://instagram.com"></a>instagram</li>
+            <li><a class="social-button" href="https://vk.com">В контакте</a></li>
+            <li><a class="social-button" href="https://facebook.com">Facebook</a></li>
+            <li><a class="social-button" href="https://instagram.com">instagram</a></li>
           </ul>
         </div>
 
@@ -118,7 +123,7 @@
         </p>
 
         <p class="footer-copyright">
-          Разработано - <br>
+          Разработано -
           <a href="https://htmlacademy.ru">htmlacademy.ru</a>
         </p>
       </section>
