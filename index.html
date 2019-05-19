@@ -16,19 +16,37 @@
       </div>
 
       <section class="header-info">
-        <h1 class="description">
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </h1>
-        <address class="contacts-header">
-          <a href="tel: +7912550555" class="pnone-header">+7 (812) 555-05-55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </adress>
+          <h1 class="description">
+            Интернет-магазин строительных материалов и инструментов для ремонта
+          </h1>
+          <address class="contacts-header">
+            <a href="tel: +7912550555" class="pnone-header">+7 (812) 555-05-55</a>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </adress>
 
-        <ul class="user-block">
-          <li><a href="login.html">Войти</a></li>
-          <li><a href="register.html">Регистрация</a></li>
-        </ul>
-      </section>
+          <ul class="user-block">
+            <li><a href="login.html">Войти</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+          </ul>
+
+          <form class="login-form" action="login.html" method="post">
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+
+            <label class="login-checkbox">
+              <input type="checkbox" name="remember">
+              Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+
+            <button class="button" type="submit">Войти</button>
+          </form>
+
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
 
       <nav class="main-navigation">
         <ul class="navigation-links">
@@ -129,7 +147,7 @@
       </section>
 
       <section class="services">
-        <h2 class="hidden">Как мы работаем</h2>
+        <h2 class="visually-hidden">Как мы работаем</h2>
         <b>Сервисы</b>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!
@@ -178,7 +196,24 @@
         <div class="main-map">
           <a href="maps.html"><img src="img/map.jpg" width="300" height="158" alt="Схема проезда"></a>
         </div>
-        <a href="contcts.html" class="button">Заблудились? Напишите нам!</a>
+        <div class="map=modal">
+          <img src="img/map@2x.jpg" width="940" height="446.2" alt="Офис компании г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <button type="button" class="modal-close"></button>
+        </div>
+        <a href="contacts.html" class="button">Заблудились? Напишите нам!</a>
+        <div class="feedback-modal">
+          <form class="feedback-form" action="contacts.html" method="post">
+            <label for="feedback-name">Ваше имя:</label>
+            <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            <label for="feedback-email">Ваш e-mail:</label>
+            <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
+            <label for="feedback-message">Текст письма:</label>
+            <input id="feedback-message" type="text" name="message" value="" placeholder="В свободной форме">
+            <button type="submit" class="button">Отправить</button>
+          </form>
+          <button type="button" class="modal-close"></button>
+        </div>
+
       </section>
     </main>
 
