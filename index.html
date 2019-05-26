@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
 
       <div class="top-navigation">
-        <a href="index.html">Техномарт</a>
-        <a href="search.html">Поиск</a>
-        <a href="bookmarks.html">Закладки</a>
-        <a href="cart.html">Корзина</a>
-        <a href="checkout.html">Оформить заказ</a>
+        <a class="logo" href="index.html"><img src="img/logo-technomart.png" width="109" height="19" alt="Логотип Техномарт"></a>
+        <a class="top-links" href="search.html">Поиск</a>
+        <a class="top-links" href="bookmarks.html">Закладки</a>
+        <a class="top-links" href="cart.html">Корзина</a>
+        <a class="checkout" href="checkout.html">Оформить заказ</a>
       </div>
 
       <section class="header-info">
@@ -22,43 +25,28 @@
           <address class="contacts-header">
             <a href="tel: +7912550555" class="pnone-header">+7 (812) 555-05-55</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </adress>
+          </address>
 
           <ul class="user-block">
             <li><a href="login.html">Войти</a></li>
             <li><a href="register.html">Регистрация</a></li>
           </ul>
 
-          <form class="login-form" action="login.html" method="post">
-            <label class="visually-hidden" for="user-login">Логин</label>
-            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+          <nav class="main-navigation">
+            <ul class="navigation-links">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about-us.html">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="specials.html">Спецпредложения</a></li>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
 
-            <label class="visually-hidden" for="user-password">Пароль</label>
-            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-
-            <label class="login-checkbox">
-              <input type="checkbox" name="remember">
-              Запомните меня
-            </label>
-            <a class="restore" href="#">Я забыл пароль!</a>
-
-            <button class="button" type="submit">Войти</button>
-          </form>
-
-          <button class="modal-close" type="button">Закрыть форму</button>
         </section>
 
-      <nav class="main-navigation">
-        <ul class="navigation-links">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about-us.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="specials.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+
     </header>
 
     <main class="container">
@@ -149,7 +137,7 @@
       <section class="services">
         <h2 class="visually-hidden">Как мы работаем</h2>
         <b>Сервисы</b>
-        <p>
+        <p class="main-text">
           Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
@@ -171,12 +159,12 @@
 
       <section class="about-company">
         <h2>Компания Техномарт</h2>
-        <p>
+        <p class="main-text">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
           для ремонта и строительства не оставит равнодушными любителей
           сэкономить на гастарбайтерах.
         </p>
-        <p>
+        <p class="main-text">
           Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
         </p>
@@ -191,8 +179,8 @@
       </section>
 
       <section class="main-contacts">
-        <h2 class="visually-hidden">Схема проезда</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <h2>Контакты</h2>
+        <p class="main-text">Вы можете забрать товар сами, заехав в наш офис:</p>
         <div class="main-map">
           <a href="maps.html"><img src="img/map.jpg" width="300" height="158" alt="Схема проезда"></a>
         </div>
@@ -217,9 +205,9 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <div class="footer-navigation">
-        <a href="index.html">Техномарт</a>
+        <a class="logo" href="index.html"><img src="img/logo-technomart2x.png" width="138" height="23" alt="Логотип Техномарт"></a>
 
         <ul class="navigation-links">
           <li><a href="about-us.html">Компания</a></li>
@@ -230,9 +218,9 @@
         </ul>
       </div>
 
-      <section class="footer-second-nav">
-        <address class="footer-adress">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<p>
+      <div class="footer-second-nav">
+        <address class="footer-address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </address>
 
@@ -242,16 +230,16 @@
           <li><a href="tools.html">Инструменты</a></li>
           <li><a href="specials.html">Спецпредложения</a></li>
         </ul>
-      </section>
+      </div>
 
-      <section class="footer-end-row">
+      <div class="footer-end-row">
         <p class="footer-copyright">
           © 2010–2019 Компания «Техномарт»<br>
           Все права защищены
         </p>
 
-        <div class="footer-social">
-          <ul>
+        <div>
+          <ul class="footer-social">
             <li><a class="social-button" href="https://vk.com">В контакте</a></li>
             <li><a class="social-button" href="https://facebook.com">Facebook</a></li>
             <li><a class="social-button" href="https://instagram.com">instagram</a></li>
@@ -267,7 +255,7 @@
           Разработано -
           <a href="https://htmlacademy.ru">htmlacademy.ru</a>
         </p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
