@@ -63,7 +63,7 @@
         <form class="filter" action="index.html" method="get">
           <span>Фильтр:</span>
           <fieldset>
-            <legend>Цена:</legend>
+            <legend class="filter-name">Цена:</legend>
             <input type="range" min="0" max="3000" step="1" value="50">
             <label class="price-range">
               <input type="text" name="price-lowest" value="0">
@@ -76,7 +76,7 @@
             </label>
           </fieldset>
           <fieldset>
-            <legend>Производители:</legend>
+            <legend class="filter-name">Производители:</legend>
             <ul class="filter-manufactures">
               <li>
                 <label class="filter-checkbox">
@@ -111,7 +111,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Питание:</legend>
+            <legend class="filter-name">Питание:</legend>
             <ul class="filter-power">
               <li>
                 <label class="filter-radio">
@@ -246,7 +246,9 @@
 
     <footer class="main-footer">
       <div class="footer-navigation">
-        <a class="logo" href="index.html"><img src="img/logo-technomart2x.png" width="138" height="23" alt="Логотип Техномарт"></a>
+        <a class="logo" href="index.html">
+          <img src="img/logo-technomart2x.png" width="138" height="23" alt="Логотип Техномарт">
+        </a>
 
         <ul class="navigation-links">
           <li><a href="about-us.html">Компания</a></li>
