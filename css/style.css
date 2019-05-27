@@ -71,10 +71,7 @@ h1 {
   margin: 0;
 
   font-size: 16px;
-  font-style: italic;
   line-height: 23px;
-
-  color: #ee3643;
 }
 
 h2 {
@@ -268,7 +265,6 @@ h3 {
   border-radius: 2px;
 }
 
-
 .description {
   margin: 0;
 
@@ -299,7 +295,7 @@ h3 {
   background-color: #f2f6f8;
 }
 
-legend {
+.filter-name {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   color: #000000;
