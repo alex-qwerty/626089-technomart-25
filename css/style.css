@@ -427,19 +427,19 @@ h3 {
   text-transform: uppercase;
 }
 
-.filter .filter-name {
+.filter-name {
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
 }
 
-.filter .filter-checkbox,
-.filter .filter-radio {
+.filter-checkbox,
+.filter-radio {
   font-size: 15px;
   line-height: 20px;
 }
 
-.filter .filter-fieldset {
+.filter-fieldset {
   margin: 0;
   padding: 0;
   border: none;
